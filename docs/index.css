@@ -37,8 +37,8 @@ table {
 
 td{
     padding-right: 10px;
-    border-bottom:solid 1px #444;
+    border-top:solid 1px #444;
 }
-.tableend td{
-    border:none;
+.trtop td{
+    border-top:none;
 }
