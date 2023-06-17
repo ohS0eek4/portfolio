@@ -4,25 +4,41 @@ nav {
     background-color: darkgray;
     padding-top: 5px;
     box-sizing: border-box;
-    }
-    
-    ul.menu {
+}
+
+h3{
+    padding:3px;
+    border-left:solid 7px;
+    border-bottom:solid 2px; 
+}
+
+ul.menu {
     display: flex;
-    }
-    
-    li.menu {
+}
+
+li.menu {
     list-style: none;
-    }
-    
-    a {
+}
+
+.menu a {
     display: block;
     text-decoration: none;
     color: greenyellow;
     margin-right: 35px;
-    }
-    
-    footer{
+}
+
+footer{
     text-align: center;
-    }
-    
-    
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td{
+    padding-right: 10px;
+    border-bottom:solid 1px #444;
+}
+.tableend td{
+    border:none;
+}
