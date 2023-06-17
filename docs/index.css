@@ -7,6 +7,7 @@ nav {
 }
 
 h3{
+    margin:5px;
     padding:3px;
     border-left:solid 7px;
     border-bottom:solid 2px; 
@@ -18,13 +19,14 @@ ul.menu {
 
 li.menu {
     list-style: none;
+    border-right:solid 1px #666;
 }
 
 .menu a {
     display: block;
     text-decoration: none;
     color: greenyellow;
-    margin-right: 35px;
+    margin: auto 20px;
 }
 
 footer{
@@ -39,6 +41,7 @@ td{
     padding-right: 10px;
     border-top:solid 1px #444;
 }
-.trtop td{
-    border-top:none;
+
+.trtop td, li.trtop{
+    border:none;
 }
