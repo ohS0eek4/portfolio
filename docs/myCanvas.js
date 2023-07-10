@@ -36,9 +36,8 @@ class cube_ins{
     }
 }
 let cubes=[];
-for (var i=0;i<30;i++){
-    cubes.push(new cube_ins([(Math.random()-0.5)*8,(Math.random()-0.8)*5,(Math.random()-0.9)*10],1))}
-  
+for (var i=0;i<30;i++){cubes.push(new cube_ins([(Math.random()-0.5)*15,(Math.random()-0.5)*9,(Math.random()-0.9)*10],1))}
+
 const directionalLight = new THREE.DirectionalLight(0xFFFFFF);// 平行光源
 directionalLight.position.set(1, 0.5, 1);
 scene.add(directionalLight);
@@ -51,13 +50,14 @@ window.addEventListener('mousedown', (event)=>{if(looker){scene.remove(looker.ob
       width = window.innerWidth;height = window.innerHeight;
       renderer.setPixelRatio(window.devicePixelRatio);renderer.setSize(width, height);camera.aspect = width / height;
       camera.updateProjectionMatrix();
+      console.log(width,height);
   });
 let time=new THREE.Clock();
 const raycaster = new THREE.Raycaster();
 var space=0.4;
 function setup(){
-for(var i=-1;i<space;i+=0.05){
-    for(var j=-1*space;j<1;j+=0.05){
+for(var i=-1+space;i<1-space;i+=0.05){
+    for(var j=-1;j<1;j+=0.05){
         raycaster.setFromCamera(new THREE.Vector2(i,j), camera);
         const intersects = raycaster.intersectObjects(scene.children);
         if(intersects.length>0){scene.remove(intersects[0].object);}

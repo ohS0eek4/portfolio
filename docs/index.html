@@ -13,11 +13,12 @@
     }
   }
 </script>
-<script type="module" src="index.js"></script>
+<script type="module" src="myCanvas.js"></script>
+<script type="module" src="petitCanvas.js"></script>
 </head>
-<body style="min-height: 100vh;">
-  <canvas id="myCanvas" style="position:absolute;z-index:-1;" ></canvas>
-    <nav>
+<body>
+  <canvas class="canvas" id="myCanvas"></canvas>
+  <nav>
     <ul class="menu">
     <li class="menu"><a href="#about">自己紹介</a></li>
     <li class="menu"><a href="#skill">使える技術</a></li>
@@ -26,49 +27,65 @@
     </ul>
 </nav>
 <main>
-<h3 id="about">自己紹介</h3>
-    <ul>
-    <li>外谷透仁</li>
-    <li>武蔵野大学　データサイエンス学部データサイエンス学科</li>
-    <li>趣味：本を読む　好きなジャンル：文学、量子力学、心理学、民俗学（特に新興宗教）、生物学、天文学</li>
-    <li>目標：有終の美</li>
-    </ul>
-<h3 id="skill">使える技術</h3>
+
+<div class="anc" id="about"><h3>自己紹介</h3></div>
+<img src="img/plof.jpg" width="100" style="border-radius: 50%;">
+<table>
+  <tr class="trtop">
+    <td>名前</td><td>外谷透仁</td>
+  </tr><tr>
+    <td>所属</td><td>2022.04- 武蔵野大学<br>データサイエンス学部データサイエンス学科</td>
+  </tr><tr>
+    <td>趣味</td><td>本を読む</td>
+  </tr><tr>
+    <td>好きなジャンル</td><td>文学、量子力学、心理学、民俗学（特に新興宗教）、生物学、天文学</td>
+  </tr><tr>
+    <td>目標</td><td>無意味に生きて無意味に死ぬ</td>
+  </tr>
+</table>
+
+<div class="anc" id="skill"><h3>使える技術</h3></div>
 <ul>
 <li>C++基礎レベル</li>
 <li>Python基礎レベル</li>
 <li>WebGL</li>
 <li>Apache2少し</li>
 </ul>
-<h3 id="works">これまでの成果物</h3>
-<table>
-    <tr class="trtop">
-      <td>年月</td><td>内容</td><td>URL</td>
-    </tr>
-    <tr>
-      <td>2022.06</td>
-      <td>サポーターズ主催ハッカソンに参加</td>
-      <td><a href="https://github.com/ohS0eek4/ronpa" target="_blank">GitHub：論文検索ツール ろんぱ</a></td>
-    </tr>
-    <tr>
-      <td>2022.09</td>
-      <td>サポーターズ主催技育展に出展-参加賞</td>
-      <td><a href="https://talent.supporterz.jp/geekten/2022/exhibition.html#theme12" target="_blank">特設展示・結果発表ページ</a></td>
-    </tr>
-    <tr>
-      <td>2023.07</td>
-      <td>サポーターズ主催ハッカソンに参加-企業賞_株式会社ゆめみ</td>
-      <td><a href="https://github.com/UnspeakableSnow/node_WebGL_game" target="_blank">GitHub：ブラウザFPS おじさんオフェンス</a><br><a href="https://twitter.com/geek_pjt/status/1675436460781223936?s=20" target="_blank">twitter</a></td>
-    </tr>
-    <tr>
-      <td>2023.x</td>
-      <td>ここに概要を挿入</td>
-      <td><a href="#" target="_blank">URL</a></td>
-    </tr>
-</table>
-<h3 id="contact">連絡</h3>
+
+<div class="anc" id="works"><h3>これまでの成果物</h3></div>
+<div class="cards">
+<div class="card">
+  <img class="card_img" src="img/ronpa.png">
+  <p class="card_date">2022.06</p>
+  <h4 class="card_title">サポーターズ主催ハッカソンに参加</h4>
+  <a href="https://github.com/ohS0eek4/ronpa" target="_blank" class="card_lnk">GitHub：論文検索ツール ろんぱ</a>
+</div>
+<div class="card">
+  <img class="card_img" src="img/p_12_01.jpeg">
+  <p class="card_date">2022.09</p>
+  <h4 class="card_title">サポーターズ主催技育展に出展<br>参加賞</h4>
+  <a href="https://talent.supporterz.jp/geekten/2022/exhibition.html#theme12" target="_blank" class="card_lnk">特設展示・結果発表ページ</a></td>
+</div>
+</div>
+<div class="cards">
+<div class="card">
+  <img class="card_img" src="img/230702.gif">
+  <p class="card_date">2023.07</p>
+  <h4 class="card_title">サポーターズ主催ハッカソンに参加<br>企業賞 株式会社ゆめみ</h4>
+  <a href="https://github.com/UnspeakableSnow/node_WebGL_game" target="_blank" class="card_lnk">GitHub：ブラウザFPS おじさんオフェンス</a><br>
+  <a href="https://twitter.com/geek_pjt/status/1675436460781223936?s=20" target="_blank" class="card_lnk">twitter</a>
+</div>
+<div class="card">
+  <img class="card_img" src="img/ronpa.png">
+  <p class="card_date">2023.x</p>
+  <h4 class="card_title">ここに概要を挿入</h4>
+  <a href="#" target="_blank" class="card_lnk">URL</a>
+</div>
+</div>
+
+<div class="anc" id="contact"><h3>連絡</h3></div>
 <ul>
-<li>mail - s2222067＠stu.musashino-u.ac.jp<br><span style="font-size: small;">※お手数ですが＠を半角に直してご利用ください</span></li>
+<li>mail - s2222067 @stu.musashino-u.ac.jp</li>
 </ul>
 </main>
 <footer>©︎2023 Yukihito Toya</footer>
