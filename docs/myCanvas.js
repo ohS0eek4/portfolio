@@ -20,7 +20,7 @@ class cube_ins{
                 this.material = new THREE.MeshNormalMaterial();
                 break;
             case 1:
-                this.material = new THREE.MeshStandardMaterial({color: 0x559944, roughness:0.5});
+                this.material = new THREE.MeshStandardMaterial({color: 0x7fff7f, roughness:0.5});
                 break;
         }
         this.cube = new THREE.Mesh( this.geometry, this.material );
@@ -32,7 +32,6 @@ class cube_ins{
     }
     move(t){
         var range=this.cube.scale.x+(this.tosize-this.cube.scale.x)*0.15;
-        if(range>1.1){console.log(range)}
         this.cube.scale.set(range,range,range);
         this.cube.rotation.x+=(Math.sin(t*this.sta)+0.9)*0.02;
         this.cube.rotation.y+=(Math.sin(t*this.sta)+0.85)*0.02;
