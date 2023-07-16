@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', init);
 let width = window.innerWidth;let height = window.innerHeight;
 function init() {
     const renderer = new THREE.WebGLRenderer({
-      canvas: document.querySelector('#myCanvas')
+      canvas: document.querySelector('#putitCanvas')
     });
     renderer.setSize(width, height);
     const scene = new THREE.Scene();
