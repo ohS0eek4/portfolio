@@ -3,6 +3,7 @@ body{
     position:relative;
     font-size:medium;
     background-color: #d6adff;
+    font-family: Meiryo, sans-serif;
 }
 main{
     margin:auto;
@@ -68,7 +69,7 @@ td{
     border-top:solid 1px #444;
 }
 
-.trtop td, li.trtop{
+thead td{
     border:none;
 }
 
