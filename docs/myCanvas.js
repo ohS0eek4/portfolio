@@ -56,7 +56,8 @@ let looker=null;
 window.addEventListener('mousemove', (event)=>{mouse.x=(event.x/width-0.5)*2;mouse.y=(event.y/height-0.5)*-2;});
 window.addEventListener('mousedown', (event)=>{
     if(looker){scene.remove(looker.object);
-        new Audio("sounds/ビープ音1.mp3").play();
+        if (window.innerWidth>800)
+            new Audio("sounds/ビープ音1.mp3").play();
         console.log(String(looker.object.name)+"は生きられなかった。")}
         cubes.push(new cube_ins([(Math.random()-0.5)*15,(Math.random()-0.5)*9,(Math.random()-1.1)*10],1,cubes.length));
     });
