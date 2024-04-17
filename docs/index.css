@@ -10,6 +10,7 @@ main{
     width:720px;
     background-color: #ccc7;
     padding:10px;
+    position:relative;
 }
 
 .cont_title{
@@ -17,6 +18,11 @@ main{
     padding:3px;
     border-left:solid 7px;
     border-bottom:solid 2px; 
+    border-top:solid 5px #0000;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:x-large;
 }
 
 .anc{
@@ -84,6 +90,13 @@ thead td{
     padding:10px;
     margin:5px;
     border-radius: 3%;
+    transition : 0.5s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    animation:pick 1s ease-out;
+    transition : 0.5s;
 }
 .card_img{
     height:168px;
@@ -101,6 +114,9 @@ thead td{
 .card_lnk{
     font-size: 0.9em;
 }
+.card_lnk:hover {
+    background-color: gold;
+  }
 input[type="checkbox"]{
     display:none;
 }
