@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
 <link href="index.css" rel="stylesheet" type="text/css">
 <link rel="icon" href="favicon.ico">
 <script type="importmap">
@@ -37,9 +38,13 @@
     <li class="menu"><a href="#works">これまでの成果物</a></li>
     <li class="menu trtop"><a href="#contact">連絡</a></li>
     </ul>
-</nav>
-<main>
+  </nav>
 
+  <div id="saywellcome" class="-visible">
+    <h1 class="wellcome_comment">Wellcome!!!<br>(*>w<*)</h1>
+  </div>
+
+<main>
 <div class="anc" id="about"><h3 class="cont_title">自己紹介</h3></div>
 <img src="img/plof.png" width="100" style="border-radius: 50%;" alt="">
 <table>
@@ -300,5 +305,11 @@ websocketやblenderのアニメーションなどの技術を入れられたこ�
 <p>　mail - s2222067[at]stu.musashino-u.ac.jp</p>
 </main>
 <footer>©︎2024 Yukihito Toya</footer>
+<script>
+  sw_wall=document.getElementById("saywellcome");
+  setTimeout(function() {
+    sw_wall.className="";
+  }, 1500);
+</script>
 </body>
 </html>

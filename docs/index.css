@@ -5,6 +5,35 @@ body{
     background-color: #d6adff;
     font-family: Meiryo, sans-serif;
 }
+
+#saywellcome{
+    position:fixed;
+    z-index:99;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    user-select: none;
+    transform: translate(0, 100%);
+    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) .6s;
+    background-color: #7fff7f;
+}
+#saywellcome.-visible{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+.wellcome_comment{
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position:absolute;
+    font-size:100px;
+    text-align: center;
+    top:40vh;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
 main{
     margin:auto;
     width:720px;
