@@ -34,7 +34,7 @@ class cube_ins{
         this.tosize=2;
     }
     move(t){
-        var range=this.cube.scale.x*0.9+(this.tosize-this.cube.scale.x)*0.1;
+        var range=this.cube.scale.x*0.97+(this.tosize-this.cube.scale.x)*0.03;
         this.cube.scale.set(range,range,range);
         this.cube.rotation.x+=(Math.sin(t*this.sta)+0.9)*0.02;
         this.cube.rotation.y+=(Math.sin(t*this.sta)+0.85)*0.02;
