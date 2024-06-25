@@ -56,7 +56,7 @@ window.addEventListener('mousemove', (event)=>{mouse.x=(event.x/width-0.5)*2;mou
 window.addEventListener('mousedown', (event)=>{
     if(looker){scene.remove(looker.object);
         if (window.innerWidth>800)
-            new Audio("sounds/ビープ音1.mp3").play();
+            // new Audio("sounds/ビープ音1.mp3").play();
         console.log(String(looker.object.name)+"は生きられなかった。")}
         cubes.push(new cube_ins(1,cubes.length));
     });
