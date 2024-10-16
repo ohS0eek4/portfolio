@@ -23,7 +23,7 @@ body{
     transform: translate(0, 0);
 }
 .wellcome_comment{
-    font-family: "Jersey 10", sans-serif;
+    font-family: "Jersey 10", serif;
     font-weight: 400;
     font-style: normal;
     position:absolute;
